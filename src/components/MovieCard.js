@@ -1,5 +1,5 @@
 import React from "react";
-import { IMAGE_CDN } from "../Utils/constants";
+import { IMAGE_CDN } from "../utils/constants";
 
 const MovieCard = ({ movie }) => {
   const { title, backdrop_path, vote_average, overview } = movie;

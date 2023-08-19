@@ -8,7 +8,7 @@ const MoviesContainer = ({ searchResults }) => {
     </Link>
   ));
 
-  return results.length === 0 ? (
+  return results?.length === 0 ? (
     <h2 className="text-center">Sorry, no results found</h2>
   ) : (
     <div>

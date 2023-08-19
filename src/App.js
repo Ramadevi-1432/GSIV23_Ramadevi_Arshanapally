@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./components/Home";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import MoviesContainer from "./components/MovieContainer";
+import MovieInfo from "./components/MovieInfo";
 
 function App() {
   const AppLayout = () => {
@@ -22,7 +22,7 @@ function App() {
         },
         {
           path: "/:id",
-          element: <MoviesContainer />,
+          element: <MovieInfo />,
         },
       ],
     },

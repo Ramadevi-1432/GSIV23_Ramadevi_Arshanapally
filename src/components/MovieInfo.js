@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HiMiniHome } from "react-icons/hi2";
 import { Link, useParams } from "react-router-dom";
-import { API_KEY } from "../Utils/constants";
+import { API_KEY } from "../utils/constants";
 import MovieDetails from "./MovieDetails";
 import Movie from "./Movie";
 

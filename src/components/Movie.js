@@ -1,7 +1,7 @@
 import React from "react";
-import { IMAGE_CDN } from "../Utils/constants";
-import { convertMinutesToCustomFormat } from "../Utils/helper";
-import { getYear } from "../Utils/helper";
+import { IMAGE_CDN } from "../utils/constants";
+import { convertMinutesToCustomFormat } from "../utils/helper";
+import { getYear } from "../utils/helper";
 
 const Movie = ({ movies, crew, cast }) => {
   const {

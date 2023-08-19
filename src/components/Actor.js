@@ -1,6 +1,6 @@
 import React from "react";
-import { IMAGE_CDN } from "../Utils/constants";
-import { logo } from "../Utils/helper";
+import { IMAGE_CDN } from "../utils/constants";
+import { logo } from "../utils/helper";
 
 const Actor = ({ cast }) => {
   const { profile_path, name, character } = cast;
