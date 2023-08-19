@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MOVIES_API } from "../utils/constants";
+import { MOVIES_API } from "../Utils/constants";
 import Header from "./Header";
 import MoviesContainer from "./MovieContainer";
 

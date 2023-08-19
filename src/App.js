@@ -1,16 +1,27 @@
 import "./App.css";
 import Home from "./components/Home";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import MoviesContainer from "./components/MovieContainer";
 
 function App() {
+  const AppLayout = () => {
+    return (
+      <div>
+        <Outlet />
+      </div>
+    );
+  };
   const appRouter = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <AppLayout />,
       children: [
         {
           path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/:id",
           element: <MoviesContainer />,
         },
       ],

@@ -1,5 +1,6 @@
 import React from "react";
 import { HiMiniHome } from "react-icons/hi2";
+import { Link } from "react-router-dom";
 
 const Header = ({ movies, setSearchResults }) => {
   const handleSearchChange = (e) => {
@@ -27,7 +28,9 @@ const Header = ({ movies, setSearchResults }) => {
             />
           </form>
         </div>
-        <HiMiniHome className="mx-2 col-span-2 cursor-pointer" size={30} />
+        <Link to="/">
+          <HiMiniHome className="mx-2 col-span-2" size={30} />
+        </Link>
       </div>
     </div>
   );
