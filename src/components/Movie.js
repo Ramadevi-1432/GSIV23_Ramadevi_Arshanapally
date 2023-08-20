@@ -13,6 +13,7 @@ const Movie = ({ movies, crew, cast }) => {
     runtime,
   } = movies;
   const directors = crew?.filter((member) => member?.job === "Director");
+  console.log(directors);
   return (
     <div className="flex justify-center mt-6">
       <div className="flex mt-4 mx-14">
